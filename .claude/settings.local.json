@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.14.0/bin:$PATH\")",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(export NVM_DIR=\"$HOME/.nvm\")",
+      "Bash(source \"$NVM_DIR/nvm.sh\")",
+      "Bash(nvm use:*)",
+      "Bash(NVM_DIR=\"$HOME/.nvm\")",
+      "Bash(. \"$NVM_DIR/nvm.sh\")",
+      "Bash(NODE_BIN=\"$HOME/.nvm/versions/node/v22.14.0/bin\")",
+      "Bash($NODE_BIN/npm --version)",
+      "Bash(/Users/bean/.nvm/versions/node/v22.14.0/bin/node /Users/bean/.nvm/versions/node/v22.14.0/bin/npm --prefix /Users/bean/Desktop/resume install)",
+      "Bash(/Users/bean/.nvm/versions/node/v22.14.0/bin/node /Users/bean/.nvm/versions/node/v22.14.0/bin/npx tsc:*)",
+      "Bash(/Users/bean/.nvm/versions/node/v22.14.0/bin/node /Users/bean/Desktop/resume/node_modules/.bin/tsc:*)",
+      "Bash(/Users/bean/.nvm/versions/node/v22.14.0/bin/node:*)",
+      "Bash(NODE=/Users/bean/.nvm/versions/node/v22.14.0/bin/node:*)",
+      "Bash($NODE /Users/bean/Desktop/resume/node_modules/.bin/next build /Users/bean/Desktop/resume)",
+      "Bash($NODE /Users/bean/Desktop/resume/node_modules/next/dist/bin/next build:*)",
+      "Bash(export PATH=\"/Users/bean/.nvm/versions/node/v22.14.0/bin:$PATH\":*)",
+      "Bash(node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next build:*)"
+    ]
+  }
+}
