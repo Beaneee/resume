@@ -21,7 +21,17 @@
       "Bash($NODE /Users/bean/Desktop/resume/node_modules/.bin/next build /Users/bean/Desktop/resume)",
       "Bash($NODE /Users/bean/Desktop/resume/node_modules/next/dist/bin/next build:*)",
       "Bash(export PATH=\"/Users/bean/.nvm/versions/node/v22.14.0/bin:$PATH\":*)",
-      "Bash(node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next build:*)"
+      "Bash(node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next build:*)",
+      "Bash(git -C /Users/bean/Desktop/resume remote add:*)",
+      "Bash(git -C /Users/bean/Desktop/resume remote:*)",
+      "Bash(git -C /Users/bean/Desktop/resume push -u origin main)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(lsof:*)",
+      "Bash(xargs kill -9)",
+      "Bash(chmod:*)",
+      "Bash(node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next dev:*)",
+      "Bash(printf '#!/bin/sh\\\\ncd /Users/bean/Desktop/resume\\\\nexport PATH=\"\"/Users/bean/.nvm/versions/node/v22.14.0/bin:/usr/local/bin:/usr/bin:/bin\"\"\\\\nexec /Users/bean/.nvm/versions/node/v22.14.0/bin/node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next dev --webpack\\\\n')",
+      "Bash(curl:*)"
     ]
   }
 }

@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Next.js Dev Server",
+      "runtimeExecutable": "/tmp/resume-dev.sh",
+      "runtimeArgs": [],
+      "port": 3000
+    },
+    {
+      "name": "Next.js Production Server",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/bean/Desktop/resume && PATH=/Users/bean/.nvm/versions/node/v22.14.0/bin:/usr/local/bin:/usr/bin:/bin exec /Users/bean/.nvm/versions/node/v22.14.0/bin/node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next start"
+      ],
+      "port": 3000
+    }
+  ]
+}

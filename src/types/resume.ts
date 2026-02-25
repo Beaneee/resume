@@ -1,66 +1,58 @@
-export interface PersonalInfo {
-  name: string;
-  title: string;
+export interface ContactInfo {
   email: string;
-  phone: string;
-  location: string;
-  website?: string;
-  linkedin?: string;
-  github?: string;
-  summary: string;
+  github: string;
+  githubUrl: string;
 }
 
-export interface Experience {
-  id: string;
-  company: string;
-  position: string;
-  startDate: string;
-  endDate: string | "현재";
-  location: string;
-  description: string[];
-  technologies?: string[];
+export interface CoreCompetency {
+  title: string;
+  text: string;
+  highlight?: string;
+  suffix?: string;
 }
 
-export interface Education {
-  id: string;
-  institution: string;
-  degree: string;
-  field: string;
-  startDate: string;
-  endDate: string;
-  gpa?: string;
-  description?: string;
-}
-
-export interface Skill {
+export interface SkillCategory {
   category: string;
   items: string[];
 }
 
-export interface Project {
-  id: string;
-  name: string;
-  description: string;
-  technologies: string[];
-  url?: string;
-  github?: string;
-  startDate: string;
-  endDate: string | "현재";
+export interface AchievementDetail {
+  text: string;
+  highlight?: boolean;
 }
 
-export interface Certificate {
-  id: string;
-  name: string;
-  issuer: string;
-  date: string;
-  url?: string;
+export interface Achievement {
+  title: string;
+  details: AchievementDetail[];
+}
+
+export interface Project {
+  title: string;
+  period: string;
+  description: string;
+  tags: string[];
+  achievements: Achievement[];
+}
+
+export interface WorkExperience {
+  company: string;
+  role: string;
+  period: string;
+  projects: Project[];
+}
+
+export interface Education {
+  school: string;
+  major: string;
+  period: string;
 }
 
 export interface ResumeData {
-  personalInfo: PersonalInfo;
-  experience: Experience[];
+  name: string;
+  contact: ContactInfo;
+  summary: string;
+  coreCompetencies: CoreCompetency[];
+  skills: SkillCategory[];
+  experience: WorkExperience[];
   education: Education[];
-  skills: Skill[];
-  projects: Project[];
-  certificates: Certificate[];
 }

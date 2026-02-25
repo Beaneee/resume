@@ -1,91 +1,216 @@
 import { ResumeData } from "@/types/resume";
 
 export const resumeData: ResumeData = {
-  personalInfo: {
-    name: "홍길동",
-    title: "Frontend Developer",
-    email: "hong@example.com",
-    phone: "010-1234-5678",
-    location: "서울, 대한민국",
-    website: "https://example.com",
-    linkedin: "https://linkedin.com/in/example",
-    github: "https://github.com/example",
-    summary:
-      "5년 경력의 프론트엔드 개발자로, React와 TypeScript를 활용한 웹 애플리케이션 개발을 전문으로 합니다. 사용자 경험 향상과 코드 품질에 집중하며, 팀 협업을 통한 제품 개선에 관심이 많습니다.",
+  name: "김종빈",
+  contact: {
+    email: "dev.bean06@gmail.com",
+    github: "github.com/Beaneee",
+    githubUrl: "https://github.com/Beaneee",
   },
-  experience: [
+  summary:
+    "4년차 프론트엔드 개발자로 React 기반 서비스 개발 및 운영 경험을 보유하고 있습니다. 팀 리딩, 성능 최적화, 자동화를 통해 생산성과 사용자 경험을 개선하며, 기획 단계부터 참여해 기술적 실현 가능성을 검토하고 최적의 솔루션을 제시합니다.",
+  coreCompetencies: [
     {
-      id: "exp-1",
-      company: "테크 스타트업",
-      position: "Senior Frontend Developer",
-      startDate: "2022-03",
-      endDate: "현재",
-      location: "서울",
-      description: [
-        "React, TypeScript 기반 SaaS 대시보드 개발 및 유지보수",
-        "컴포넌트 라이브러리 설계 및 Storybook 문서화",
-        "웹 성능 최적화로 LCP 40% 개선",
-        "주니어 개발자 멘토링 및 코드 리뷰",
-      ],
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "React Query"],
+      title: "성능 최적화",
+      text: "대용량 데이터 렌더링 성능 ",
+      highlight: "3배 개선",
+      suffix: " (virtualization 구현)",
     },
     {
-      id: "exp-2",
-      company: "IT 솔루션 기업",
-      position: "Frontend Developer",
-      startDate: "2019-06",
-      endDate: "2022-02",
-      location: "서울",
-      description: [
-        "Vue.js 기반 B2B 관리자 플랫폼 개발",
-        "REST API 연동 및 상태 관리 구현",
-        "크로스 브라우저 호환성 대응",
-      ],
-      technologies: ["Vue.js", "JavaScript", "SCSS", "Vuex"],
+      title: "자동화",
+      text: "Google Spreadsheet API 활용 다국어 리소스 자동화로 업무 효율 ",
+      highlight: "90% 향상",
     },
-  ],
-  education: [
     {
-      id: "edu-1",
-      institution: "한국대학교",
-      degree: "학사",
-      field: "컴퓨터공학",
-      startDate: "2015-03",
-      endDate: "2019-02",
-      gpa: "3.8 / 4.5",
+      title: "팀 리딩",
+      text: "요구사항 분석, 업무 분배, 일정 관리를 통한 프로젝트 성공적 릴리즈 (기여도 90%)",
+    },
+    {
+      title: "문제 해결",
+      text: "레거시 코드 리팩토링 및 장기 미해결 버그 분석·해결로 서비스 안정성 향상",
     },
   ],
   skills: [
     {
       category: "Frontend",
-      items: ["React", "Next.js", "TypeScript", "JavaScript", "Vue.js"],
+      items: ["React", "TypeScript", "JavaScript", "Vue"],
     },
     {
-      category: "스타일링",
-      items: ["Tailwind CSS", "SCSS", "Styled Components", "CSS Modules"],
+      category: "State Management",
+      items: ["Redux", "Zustand", "Jotai"],
     },
     {
-      category: "도구 & 기타",
-      items: ["Git", "Webpack", "Vite", "Jest", "Figma", "Jira"],
+      category: "Styling",
+      items: ["Styled-components"],
     },
-  ],
-  projects: [
     {
-      id: "proj-1",
-      name: "이력서 템플릿 생성기",
-      description: "Next.js와 Tailwind CSS로 만든 커스터마이징 가능한 이력서 템플릿",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      github: "https://github.com/example/resume",
-      startDate: "2024-01",
-      endDate: "2024-03",
+      category: "Build Tools",
+      items: ["Vite", "CRA", "pnpm"],
     },
   ],
-  certificates: [
+  experience: [
     {
-      id: "cert-1",
-      name: "정보처리기사",
-      issuer: "한국산업인력공단",
-      date: "2019-11",
+      company: "투라인클라우드",
+      role: "Frontend Developer",
+      period: "2022.06 ~ 재직 중",
+      projects: [
+        {
+          title: "쿠0사 차량 관리 시스템",
+          period: "2023.10 ~ 2024.05",
+          description: "차량 정비 및 보험 관리 B2B 서비스",
+          tags: ["TypeScript", "React", "Redux"],
+          achievements: [
+            {
+              title: "프론트엔드 팀 리딩 및 아키텍처 설계",
+              details: [
+                {
+                  text: "→ 요구사항 분석 기반 업무 분배 및 진행 상황 관리로 일정 내 릴리즈 달성 (기여도 90%)",
+                  highlight: false,
+                },
+              ],
+            },
+            {
+              title: "대용량 데이터 렌더링 성능 최적화",
+              details: [
+                {
+                  text: "→ 테이블 필터 라이브러리에서 지원하지 않는 virtualization 기법 활용",
+                  highlight: false,
+                },
+                {
+                  text: "→ 화면에 노출되는 데이터만 렌더링되도록 구조 변경",
+                  highlight: false,
+                },
+                {
+                  text: "→ 결과: 렌더링 성능 약 3배 개선, 스크롤 지연 및 UX 저하 문제 해결",
+                  highlight: true,
+                },
+              ],
+            },
+            {
+              title: "다국어 리소스 자동화로 개발 효율 극대화",
+              details: [
+                {
+                  text: "→ Google Spreadsheet API 활용 다국어 리소스 자동 생성 프로세스 구축",
+                  highlight: false,
+                },
+                {
+                  text: "→ 결과: 반복 작업 자동화로 업무 효율 및 개발 생산성 90% 향상",
+                  highlight: true,
+                },
+                {
+                  text: "→ 사내 Confluence 공유로 유사 프로젝트 표준 사례로 확산",
+                  highlight: false,
+                },
+              ],
+            },
+            {
+              title: "다직군 협업을 통한 B2B 서비스 개발 및 운영",
+              details: [
+                {
+                  text: "→ 기획·디자인·백엔드와 협업하며 웹 및 모바일 환경 대응",
+                  highlight: false,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          title: "S사 반도체 머신러닝 플랫폼",
+          period: "2025.04 ~ 진행 중",
+          description: "반도체 공정 이상 모니터링 및 검사 AI",
+          tags: ["JavaScript", "React", "Redux", "Zustand", "Styled-components"],
+          achievements: [
+            {
+              title: "레거시 코드 리팩토링으로 서비스 품질 개선",
+              details: [
+                {
+                  text: "→ 공통 컴포넌트 기능 비정상 동작 이슈 직접 분석·개선",
+                  highlight: false,
+                },
+                {
+                  text: "→ 결과: 장기 미해결 오류 해결로 기능 안정성 및 사용자 경험 향상",
+                  highlight: true,
+                },
+              ],
+            },
+            {
+              title: "빌드 및 개발 환경 현대화 (진행 중)",
+              details: [
+                {
+                  text: "→ CRA → Vite 마이그레이션으로 빌드 속도 및 개발 효율 개선 진행",
+                  highlight: false,
+                },
+                {
+                  text: "→ React 16 → 18 메이저 버전 업그레이드 (레거시 호환성 고려한 단계적 전환)",
+                  highlight: false,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          title: "S사 구매 AI 플랫폼",
+          period: "2025.01 ~ 2025.03",
+          description: "협력사 추천 및 RFP 생성 AI 서비스",
+          tags: ["TypeScript", "React", "Jotai", "Vite", "pnpm"],
+          achievements: [
+            {
+              title: "LLM API 응답 지연 환경에서 사용자 제어권 강화를 위한 Abort UX 설계",
+              details: [
+                {
+                  text: "→ LLM API 특성상 응답 지연이 불가피한 상황에서 사용자 이탈 문제 해결 필요",
+                  highlight: false,
+                },
+                {
+                  text: "→ 기획 단계에서 Abort 인터랙션을 선제적으로 제안하여 사용자가 요청을 직접 중단 가능하도록 설계",
+                  highlight: false,
+                },
+                {
+                  text: "→ Jotai 기반 전역 Abort 상태 설계로 API 요청 취소 로직 공통화 및 불필요한 요청 최소화",
+                  highlight: false,
+                },
+                {
+                  text: "→ 결과: 평균 체감 대기 시간 25% 단축",
+                  highlight: true,
+                },
+              ],
+            },
+            {
+              title: "AI 챗봇 실시간 통신 구현",
+              details: [
+                {
+                  text: "→ fetch SSE(event-stream) 기반 스트리밍 응답 처리 기능 구현",
+                  highlight: false,
+                },
+                {
+                  text: "→ LLM 응답을 실시간으로 화면에 렌더링하여 사용자 대기 경험 개선",
+                  highlight: false,
+                },
+              ],
+            },
+            {
+              title: "공통 컴포넌트 설계 및 구현 (기여도 70%)",
+              details: [
+                {
+                  text: "→ 테이블, 페이지네이션, text-editor, input 등 재사용 가능한 구조로 설계",
+                  highlight: false,
+                },
+                {
+                  text: "→ 결과: 신규 참여자 빠른 적응, 코드 일관성 확보 및 유지보수 비용 감소",
+                  highlight: true,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  education: [
+    {
+      school: "아주대학교",
+      major: "(정보 통신)미디어학과",
+      period: "2014.03 ~ 2021.02",
     },
   ],
 };
