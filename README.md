@@ -3,7 +3,7 @@
 > Next.js 기반 Notion 스타일 이력서
 
 ## 🔗 링크
-- **배포**: https://...
+- **배포**: https://beaneee.github.io/resume/
 - **GitHub**: https://github.com/Beaneee
 
 ## 🛠 Tech Stack
