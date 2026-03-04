@@ -303,6 +303,11 @@ body {
 }
 
 /* ===== PRINT ===== */
+@page {
+  size: A4;
+  margin: 15mm 20mm;
+}
+
 @media print {
   /* 버튼 숨김 */
   .print-btn {
@@ -325,7 +330,7 @@ body {
 
   .notion-container {
     max-width: 100%;
-    padding: 20px 48px;
+    padding: 0;
   }
 
   /* 링크 색상 유지, 밑줄 제거 */
@@ -334,22 +339,35 @@ body {
     text-decoration: none !important;
   }
 
-  /* 섹션·카드 중간에서 페이지 잘리지 않도록 */
-  .project-card,
-  .toggle-item,
-  .toggle-content,
+  /* 헤딩은 다음 내용과 분리되지 않도록 */
   .heading-1,
   .heading-2,
   .heading-3 {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    break-after: avoid;
+    page-break-after: avoid;
   }
 
-  /* 섹션 헤딩 이후에 페이지 넘김 방지 */
-  .heading-1,
-  .heading-2 {
-    page-break-after: avoid;
+  /* 프로젝트 카드: 너무 길면 break 허용, 헤더만 고립 방지 */
+  .project-card {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .project-header {
     break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* 토글 헤더가 단독으로 페이지 끝에 남지 않도록 */
+  .toggle-header {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* 고아 줄·과부 줄 방지 */
+  p, .indent, .n-text-gray {
+    orphans: 3;
+    widows: 3;
   }
 
   /* hover 효과 제거 */
