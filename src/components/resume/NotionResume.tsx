@@ -5,12 +5,14 @@ import CompetencyItem from "./CompetencyItem";
 import SkillsTable from "./SkillsTable";
 import ExperienceSection from "./ExperienceSection";
 import EducationItem from "./EducationItem";
+import PrintButton from "./PrintButton";
 
 export default function NotionResume() {
   const data = resumeData;
 
   return (
     <div className="notion-page">
+      <PrintButton />
       <div className="notion-container">
 
         {/* ── Header ── */}
