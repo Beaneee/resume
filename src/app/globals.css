@@ -297,23 +297,131 @@ body {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .notion-page {
+    padding: 20px 0;
+  }
+
   .notion-container {
-    padding: 40px 24px;
+    padding: 28px 20px;
   }
 
   .page-title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .heading-1 {
-    font-size: 24px;
+    font-size: 22px;
+    margin-top: 28px;
+    margin-bottom: 12px;
   }
 
   .heading-2 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 24px;
+  }
+
+  .heading-3 {
+    font-size: 16px;
+  }
+
+  /* contact: 세로 배치, 구분자 숨김 */
+  .contact-info {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contact-separator {
+    display: none;
+  }
+
+  /* project-header: 제목/기간 세로 배치 */
+  .project-header {
+    flex-direction: column;
+    gap: 2px;
   }
 
   .project-title {
+    font-size: 16px;
+  }
+
+  .project-card {
+    padding: 14px 16px;
+    margin-bottom: 20px;
+  }
+
+  /* toggle: 터치 영역 확보 */
+  .toggle-header {
+    padding: 6px 6px;
+    min-height: 38px;
+  }
+
+  /* callout: 패딩 축소 */
+  .callout {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  /* Skills table → 카드 레이아웃 */
+  .notion-table thead {
+    display: none;
+  }
+
+  .notion-table,
+  .notion-table tbody,
+  .notion-table tr,
+  .notion-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .notion-table tr {
+    margin-bottom: 10px;
+    border: 1px solid #e9e9e7;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .notion-table td {
+    border: none;
+    border-bottom: 1px solid #e9e9e7;
+    padding: 8px 12px;
+  }
+
+  .notion-table td:first-child {
+    background: #f7f6f3;
+    font-size: 13px;
+    font-weight: 600;
+    color: #37352f;
+  }
+
+  .notion-table td:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .notion-container {
+    padding: 20px 16px;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+
+  .heading-1 {
+    font-size: 20px;
+  }
+
+  .heading-2 {
     font-size: 17px;
+  }
+
+  .bullet-list li {
+    font-size: 14px;
+  }
+
+  .notion-divider {
+    margin: 24px 0;
   }
 }

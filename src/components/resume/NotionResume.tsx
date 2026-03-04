@@ -17,7 +17,7 @@ export default function NotionResume() {
         <div className="page-title">{data.name}</div>
         <div className="contact-info">
           <span>📧 {data.contact.email}</span>
-          <span>•</span>
+          <span className="contact-separator">•</span>
           <a
             href={data.contact.githubUrl}
             target="_blank"
