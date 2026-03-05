@@ -41,7 +41,7 @@ export const resumeData: ResumeData = {
     },
     {
       category: "Styling",
-      items: ["Styled-components"],
+      items: ["Styled-components", "Tailwindcss"],
     },
     {
       category: "Build Tools",

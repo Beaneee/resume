@@ -5,7 +5,7 @@ export default function SkillsTable({ skills }: { skills: SkillCategory[] }) {
     <table className="notion-table">
       <thead>
         <tr>
-          <th style={{ width: "22%" }}>카테고리</th>
+          <th style={{ width: "28%" }}>카테고리</th>
           <th>기술 스택</th>
         </tr>
       </thead>
