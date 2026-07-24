@@ -115,6 +115,49 @@ export const resumeData: ResumeData = {
           ],
         },
         {
+          title: "S0사 AI 면접 플랫폼",
+          period: "2024.09 ~ 2024.11",
+          description: "웹캠·음성 기반 AI 면접 서비스",
+          tags: ["TypeScript", "React", "Jotai", "Vite", "pnpm"],
+          achievements: [
+            {
+              title: "프로젝트 아키텍처 설계 및 구축 (기여도 80%)",
+              details: [
+                {
+                  text: "→ 초기 단계부터 폴더 구조, 상태 관리(Jotai), 빌드 환경(Vite·pnpm) 등 프로젝트 전반 설계 주도",
+                  highlight: false,
+                },
+                {
+                  text: "→ 결과: 일관된 개발 기반 확립으로 3개월 내 안정적 릴리즈 달성",
+                  highlight: true,
+                },
+              ],
+            },
+            {
+              title: "코드 일관성과 재사용성을 고려한 공통 컴포넌트 개발 (기여도 80%)",
+              details: [
+                {
+                  text: "→ 반복 UI를 재사용 가능한 구조로 설계하여 코드 일관성 확보 및 개발 생산성 향상",
+                  highlight: false,
+                },
+              ],
+            },
+            {
+              title: "웹캠·오디오 미디어 기능 구현",
+              details: [
+                {
+                  text: "→ react-webcam 활용 면접 영상 촬영 기능 구현",
+                  highlight: false,
+                },
+                {
+                  text: "→ wavesurfer.js 활용 오디오 시각화 및 재생 기능 개발",
+                  highlight: false,
+                },
+              ],
+            },
+          ],
+        },
+        {
           title: "S사 반도체 머신러닝 플랫폼",
           period: "2025.04 ~ 진행 중",
           description: "반도체 공정 이상 모니터링 및 검사 AI",

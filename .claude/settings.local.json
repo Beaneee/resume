@@ -31,7 +31,8 @@
       "Bash(chmod:*)",
       "Bash(node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next dev:*)",
       "Bash(printf '#!/bin/sh\\\\ncd /Users/bean/Desktop/resume\\\\nexport PATH=\"\"/Users/bean/.nvm/versions/node/v22.14.0/bin:/usr/local/bin:/usr/bin:/bin\"\"\\\\nexec /Users/bean/.nvm/versions/node/v22.14.0/bin/node /Users/bean/Desktop/resume/node_modules/next/dist/bin/next dev --webpack\\\\n')",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(ps -p 3218 -o pid,command)"
     ]
   }
 }
