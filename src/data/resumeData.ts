@@ -81,7 +81,7 @@ export const resumeData: ResumeData = {
                   highlight: false,
                 },
                 {
-                  text: "→ 결과: 렌더링 성능 약 3배 개선, 스크롤 지연 및 UX 저하 문제 해결",
+                  text: "→ 결과: 렌더링 성능 1.5s → 0.5s 개선, 스크롤 지연 및 UX 저하 문제 해결",
                   highlight: true,
                 },
               ],
@@ -158,7 +158,7 @@ export const resumeData: ResumeData = {
           ],
         },
         {
-          title: "S사 반도체 머신러닝 플랫폼",
+          title: "S0사 반도체 머신러닝 플랫폼",
           period: "2025.04 ~ 진행 중",
           description: "반도체 공정 이상 모니터링 및 검사 AI",
           tags: ["JavaScript", "React", "Redux", "Zustand", "Styled-components"],
@@ -192,7 +192,7 @@ export const resumeData: ResumeData = {
           ],
         },
         {
-          title: "S사 구매 AI 플랫폼",
+          title: "S0사 구매 AI 플랫폼",
           period: "2025.01 ~ 2025.03",
           description: "협력사 추천 및 RFP 생성 AI 서비스",
           tags: ["TypeScript", "React", "Jotai", "Vite", "pnpm"],
