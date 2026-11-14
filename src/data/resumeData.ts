@@ -199,17 +199,17 @@ export const resumeData: ResumeData = {
                   text: "→ 요구사항 분석 기반 업무 분배 및 진행 상황 관리로 일정 내 릴리즈 달성 (기여도 90%)",
                   highlight: false,
                 },
-                {
-                  text: "→ 기획·디자인·백엔드 등 다직군과 협업하며 웹·모바일 환경 대응 화면 구축",
-                  highlight: false,
-                },
               ],
             },
             {
               title: "대용량 데이터 렌더링 성능 최적화",
               details: [
                 {
-                  text: "→ 테이블 필터 라이브러리에서 지원하지 않는 virtualization 기법 활용, 화면에 노출되는 데이터만 렌더링되도록 구조 변경",
+                  text: "→ 테이블 필터 라이브러리에서 지원하지 않는 virtualization 기법 활용",
+                  highlight: false,
+                },
+                {
+                  text: "→ 화면에 노출되는 데이터만 렌더링되도록 구조 변경",
                   highlight: false,
                 },
                 {
@@ -219,10 +219,27 @@ export const resumeData: ResumeData = {
               ],
             },
             {
-              title: "다국어 리소스 자동화",
+              title: "다국어 리소스 자동화로 개발 효율 극대화",
               details: [
                 {
-                  text: "→ Google Spreadsheet API 활용 다국어 리소스 자동 생성 프로세스 구축, 사내 표준 사례로 확산",
+                  text: "→ Google Spreadsheet API 활용 다국어 리소스 자동 생성 프로세스 구축",
+                  highlight: false,
+                },
+                {
+                  text: "→ 결과: 반복 작업 자동화로 업무 효율 및 개발 생산성 90% 향상",
+                  highlight: true,
+                },
+                {
+                  text: "→ 사내 Confluence 공유로 유사 프로젝트 표준 사례로 확산",
+                  highlight: false,
+                },
+              ],
+            },
+            {
+              title: "다직군 협업을 통한 B2B 서비스 개발 및 운영",
+              details: [
+                {
+                  text: "→ 기획·디자인·백엔드와 협업하며 웹 및 모바일 환경 대응",
                   highlight: false,
                 },
               ],
