@@ -81,7 +81,7 @@ export const resumeData: ResumeData = {
                   highlight: false,
                 },
                 {
-                  text: "→ 기획 단계에서 Abort 인터랙션을 선제적으로 제안하여 사용자가 요청을 직접 중단 가능하도록 설계",
+                  text: "→ 기획 단계에서 Abort 인터랙션을 제안하여 사용자가 요청을 직접 중단 가능하도록 설계",
                   highlight: false,
                 },
                 {
