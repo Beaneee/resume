@@ -17,7 +17,7 @@ export const resumeData: ResumeData = {
     },
     {
       title: "컴포넌트 표준화",
-      text: "테이블·에디터 등 공통 컴포넌트 단위 표준 설계로 코드 일관성 확보 및 유지보수 비용 감소",
+      text: "테이블, 에디터 등 공통 컴포넌트 단위 표준 설계로 코드 일관성 확보 및 유지보수 비용 감소",
     },
     {
       title: "성능 최적화",
@@ -112,14 +112,14 @@ export const resumeData: ResumeData = {
         {
           title: "S0사 AI 면접 플랫폼",
           period: "2024.09 ~ 2024.11",
-          description: "웹캠·음성 기반 AI 면접 서비스",
+          description: "웹캠과 음성 기반 AI 면접 서비스",
           tags: ["TypeScript", "React", "Jotai", "Vite", "pnpm"],
           achievements: [
             {
               title: "프로젝트 아키텍처 설계 및 구축 (기여도 80%)",
               details: [
                 {
-                  text: "→ 초기 단계부터 폴더 구조, 상태 관리(Jotai), 빌드 환경(Vite·pnpm) 등 프로젝트 전반 설계 주도",
+                  text: "→ 초기 단계부터 폴더 구조, 상태 관리(Jotai), 빌드 환경(Vite, pnpm) 등 프로젝트 전반 설계 주도",
                   highlight: false,
                 },
                 {
@@ -129,7 +129,7 @@ export const resumeData: ResumeData = {
               ],
             },
             {
-              title: "웹캠·오디오 미디어 기능 구현",
+              title: "웹캠, 오디오 미디어 기능 구현",
               details: [
                 {
                   text: "→ react-webcam 활용 면접 영상 촬영 기능 구현",
@@ -162,7 +162,7 @@ export const resumeData: ResumeData = {
               title: "레거시 코드 리팩토링으로 서비스 품질 개선",
               details: [
                 {
-                  text: "→ 공통 컴포넌트 기능 비정상 동작 이슈 직접 분석·개선",
+                  text: "→ 공통 컴포넌트 기능 비정상 동작 이슈 직접 분석하고 개선",
                   highlight: false,
                 },
                 {
@@ -239,7 +239,7 @@ export const resumeData: ResumeData = {
               title: "다직군 협업을 통한 B2B 서비스 개발 및 운영",
               details: [
                 {
-                  text: "→ 기획·디자인·백엔드와 협업하며 웹 및 모바일 환경 대응",
+                  text: "→ 기획, 디자인, 백엔드와 협업하며 웹 및 모바일 환경 대응",
                   highlight: false,
                 },
               ],
