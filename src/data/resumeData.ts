@@ -32,10 +32,6 @@ export const resumeData: ResumeData = {
   ],
   skills: [
     {
-      category: "AI / Realtime",
-      items: ["SSE (event-stream)", "LLM API 연동", "Streaming UI", "AbortController"],
-    },
-    {
       category: "Frontend",
       items: ["React", "TypeScript", "JavaScript", "Vue", "Next.js"],
     },
